@@ -1,0 +1,1148 @@
+﻿[2015.10.22-20.27.04:453][  0]Log file open, 10/22/15 21:27:04
+[2015.10.22-20.27.04:453][  0]LogInit:Display: Running engine for game: SpeedUnlimited
+[2015.10.22-20.27.04:453][  0]LogInit:Display: RandInit(449394930) SRandInit(449394934).
+[2015.10.22-20.27.04:453][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.10.22-20.27.04:453][  0]LogStats: Stats thread started at 0.018841
+[2015.10.22-20.27.04:453][  0]LogInit: Version: 4.9.2-0+++depot+UE4-Releases+4.9
+[2015.10.22-20.27.04:453][  0]LogInit: API Version: 0
+[2015.10.22-20.27.04:453][  0]LogInit: Compiled (64-bit): Oct 10 2015 18:52:28
+[2015.10.22-20.27.04:453][  0]LogInit: Compiled with Clang: 3.5.0 (tags/RELEASE_350/final)
+[2015.10.22-20.27.04:453][  0]LogInit: Build Configuration: Development
+[2015.10.22-20.27.04:453][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.10.22-20.27.04:453][  0]LogInit: Command line: 
+[2015.10.22-20.27.04:453][  0]LogInit: Base directory: /home/cybermidknight/UE4Build/UnrealEngine-release/Engine/Binaries/Linux/
+[2015.10.22-20.27.04:453][  0]LogInit: Rocket: 0
+[2015.10.22-20.27.04:458][  0]LogInit: Using libcurl 7.38.0
+[2015.10.22-20.27.04:458][  0]LogInit:  - built for x86_64-unknown-linux-gnu
+[2015.10.22-20.27.04:458][  0]LogInit:  - supports SSL with OpenSSL/1.0.1i
+[2015.10.22-20.27.04:458][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.2.5
+[2015.10.22-20.27.04:458][  0]LogInit:  - other features:
+[2015.10.22-20.27.04:458][  0]LogInit:      CURL_VERSION_SSL
+[2015.10.22-20.27.04:458][  0]LogInit:      CURL_VERSION_LIBZ
+[2015.10.22-20.27.04:458][  0]LogInit:      CURL_VERSION_IPV6
+[2015.10.22-20.27.04:458][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.10.22-20.27.04:458][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.10.22-20.27.04:458][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
+[2015.10.22-20.27.04:458][  0]LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
+[2015.10.22-20.27.04:458][  0]LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
+[2015.10.22-20.27.04:458][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.10.22-20.27.04:458][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.10.22-20.27.04:458][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.10.22-20.27.04:458][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.10.22-20.27.04:458][  0]LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
+[2015.10.22-20.27.04:644][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.10.22-20.27.04:651][  0]LogInit: Object subsystem initialized
+[2015.10.22-20.27.04:651][  0]LogInit: Initializing SDL.
+[2015.10.22-20.27.05:172][  0]LogInit: Initialized SDL 2.0.4 (compiled against 2.0.4)
+[2015.10.22-20.27.05:172][  0]LogInit: Display metrics:
+[2015.10.22-20.27.05:172][  0]LogInit:   PrimaryDisplayWidth: 3840
+[2015.10.22-20.27.05:172][  0]LogInit:   PrimaryDisplayHeight: 2160
+[2015.10.22-20.27.05:172][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2015.10.22-20.27.05:172][  0]LogInit:     Left=0, Top=27, Right=3840, Bottom=2160
+[2015.10.22-20.27.05:172][  0]LogInit:   VirtualDisplayRect:
+[2015.10.22-20.27.05:172][  0]LogInit:     Left=0, Top=0, Right=7680, Bottom=2160
+[2015.10.22-20.27.05:172][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000
+[2015.10.22-20.27.05:172][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000
+[2015.10.22-20.27.05:172][  0]LogInit:   Number of monitors: 2
+[2015.10.22-20.27.05:172][  0]LogInit:     Monitor 0
+[2015.10.22-20.27.05:172][  0]LogInit:       Name: Acer CB280HK 28"
+[2015.10.22-20.27.05:172][  0]LogInit:       ID: display0
+[2015.10.22-20.27.05:172][  0]LogInit:       NativeWidth: 3840
+[2015.10.22-20.27.05:172][  0]LogInit:       NativeHeight: 2160
+[2015.10.22-20.27.05:172][  0]LogInit:       bIsPrimary: true
+[2015.10.22-20.27.05:172][  0]LogInit:     Monitor 1
+[2015.10.22-20.27.05:172][  0]LogInit:       Name: Acer CB280HK 28"
+[2015.10.22-20.27.05:172][  0]LogInit:       ID: display1
+[2015.10.22-20.27.05:172][  0]LogInit:       NativeWidth: 3840
+[2015.10.22-20.27.05:172][  0]LogInit:       NativeHeight: 2160
+[2015.10.22-20.27.05:172][  0]LogInit:       bIsPrimary: false
+[2015.10.22-20.27.05:173][  0]LogInit: Selected Device Profile: [Linux]
+[2015.10.22-20.27.05:173][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Linux]
+[2015.10.22-20.27.05:182][  0]LogInit: Linux hardware info:
+[2015.10.22-20.27.05:182][  0]LogInit:  - this process' id (pid) is 9766, parent process' id (ppid) is 9567
+[2015.10.22-20.27.05:182][  0]LogInit:  - we are not running under debugger
+[2015.10.22-20.27.05:182][  0]LogInit:  - machine network name is 'ApertureLabs'
+[2015.10.22-20.27.05:182][  0]LogInit:  - we're logged in locally
+[2015.10.22-20.27.05:182][  0]LogInit:  - Number of physical cores available for the process: 4
+[2015.10.22-20.27.05:182][  0]LogInit:  - Number of logical cores available for the process: 4
+[2015.10.22-20.27.05:182][  0]LogInit:  - Memory allocator used: binned
+[2015.10.22-20.27.05:182][  0]LogInit: Linux-specific commandline switches:
+[2015.10.22-20.27.05:182][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
+[2015.10.22-20.27.05:182][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2015.10.22-20.27.05:182][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2015.10.22-20.27.05:182][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2015.10.22-20.27.05:182][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2015.10.22-20.27.05:182][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2015.10.22-20.27.05:182][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2015.10.22-20.27.05:182][  0]LogInit: Setting LC_NUMERIC to en_US
+[2015.10.22-20.27.05:182][  0]LogInit:  - Physical RAM available (not considering process quota): 16 GB (16015 MB, 16399952 KB, 16793550848 bytes)
+[2015.10.22-20.27.05:187][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2015.10.22-20.27.06:276][  0]LogHAL:Error: *** Unable to open small font face for splash screen.
+[2015.10.22-20.27.06:276][  0]LogHAL:Error: *** Unable to open normal font face for splash screen.
+[2015.10.22-20.27.06:276][  0]LogHAL:Error: *** Unable to open large font face for splash screen.
+[2015.10.22-20.27.06:276][  0]LogRHI: Initializing OpenGL RHI
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_VENDOR: NVIDIA Corporation
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_RENDERER: GeForce GTX 780/PCIe/SSE2
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_VERSION: 3.2.0 NVIDIA 340.65
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 1.50 NVIDIA via Cg compiler
+[2015.10.22-20.27.06:276][  0]LogRHI: OpenGL Extensions:
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_AMD_multi_draw_indirect
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_arrays_of_arrays
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_base_instance
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_bindless_texture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_blend_func_extended
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_buffer_storage
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_clear_texture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_color_buffer_float
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_conservative_depth
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_compute_shader
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_compute_variable_group_size
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_copy_buffer
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_copy_image
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_debug_output
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_depth_clamp
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_depth_texture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_draw_buffers
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_draw_indirect
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_draw_instanced
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_enhanced_layouts
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_fragment_layer_viewport
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_fragment_program
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_fragment_program_shadow
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_fragment_shader
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_framebuffer_no_attachments
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_framebuffer_object
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_geometry_shader4
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_get_program_binary
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_gpu_shader5
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_gpu_shader_fp64
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_half_float_pixel
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_half_float_vertex
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_imaging
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_indirect_parameters
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_instanced_arrays
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_internalformat_query
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_internalformat_query2
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_map_buffer_range
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_multi_bind
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_multisample
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_multitexture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_occlusion_query
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_occlusion_query2
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_point_parameters
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_point_sprite
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_program_interface_query
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_provoking_vertex
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_robust_buffer_access_behavior
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_robustness
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_sample_shading
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_sampler_objects
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_draw_parameters
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_group_vote
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_image_load_store
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_image_size
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_objects
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_precision
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_query_buffer_object
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_storage_buffer_object
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_subroutine
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shading_language_100
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shading_language_include
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shading_language_packing
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_shadow
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_sparse_texture
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_stencil_texturing
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_sync
+[2015.10.22-20.27.06:276][  0]LogRHI:   GL_ARB_tessellation_shader
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_border_clamp
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_compression
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_cube_map
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_env_add
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_env_combine
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_env_crossbar
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_env_dot3
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_float
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_gather
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_mirrored_repeat
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_multisample
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_query_levels
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_query_lod
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_rectangle
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_rg
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_stencil8
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_storage
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_swizzle
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_texture_view
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_timer_query
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_transform_feedback2
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_transform_feedback3
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_transpose_matrix
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_array_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_attrib_64bit
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_buffer_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_program
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_shader
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_viewport_array
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ARB_window_pos
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ATI_draw_buffers
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ATI_texture_float
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_ATI_texture_mirror_once
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_S3_s3tc
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_env_add
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_abgr
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_bgra
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_bindable_uniform
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_blend_color
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_blend_func_separate
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_blend_minmax
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_blend_subtract
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_compiled_vertex_array
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_Cg_shader
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_depth_bounds_test
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_direct_state_access
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_draw_buffers2
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_draw_instanced
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_draw_range_elements
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_fog_coord
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXTX_framebuffer_mixed_formats
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_framebuffer_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_geometry_shader4
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_gpu_program_parameters
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_gpu_shader4
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_multi_draw_arrays
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_packed_float
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_packed_pixels
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_point_parameters
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_provoking_vertex
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_rescale_normal
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_secondary_color
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_separate_shader_objects
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_separate_specular_color
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_shader_image_load_store
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_shadow_funcs
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_stencil_two_side
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_stencil_wrap
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture3D
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_array
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_buffer_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_compression_latc
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_cube_map
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_edge_clamp
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_env_combine
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_env_dot3
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_integer
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_lod
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_lod_bias
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_mirror_clamp
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_sRGB
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_storage
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_texture_swizzle
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_timer_query
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_transform_feedback2
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_vertex_array
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_vertex_attrib_64bit
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_x11_sync_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_EXT_import_sync_object
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_IBM_rasterpos_clip
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_IBM_texture_mirrored_repeat
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_KHR_debug
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_KTX_buffer_region
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect_count
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_bindless_texture
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_blend_equation_advanced
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_blend_square
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_compute_program5
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_conditional_render
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_copy_depth_to_color
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_copy_image
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_depth_buffer_float
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_depth_clamp
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_draw_texture
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_ES1_1_compatibility
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_ES3_1_compatibility
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_explicit_multisample
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_fence
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_float_buffer
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_fog_distance
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_fragment_program
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_fragment_program_option
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_fragment_program2
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_framebuffer_multisample_coverage
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_geometry_shader4
+[2015.10.22-20.27.06:277][  0]LogRHI:   GL_NV_gpu_program4
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_gpu_program4_1
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_gpu_program5
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_gpu_program5_mem_extended
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_gpu_program_fp64
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_gpu_shader5
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_half_float
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_light_max_exponent
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_multisample_coverage
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_multisample_filter_hint
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_occlusion_query
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_parameter_buffer_object
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_parameter_buffer_object2
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_path_rendering
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_pixel_data_range
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_point_sprite
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_primitive_restart
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_register_combiners
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_register_combiners2
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_atomic_counters
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_atomic_float
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_atomic_int64
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_buffer_load
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_storage_buffer_object
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texgen_reflection
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_barrier
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_compression_vtc
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_env_combine4
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_expand_normal
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_multisample
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_rectangle
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_shader
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_shader2
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_texture_shader3
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_transform_feedback
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_transform_feedback2
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vdpau_interop
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_array_range
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_array_range2
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_attrib_integer_64bit
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_buffer_unified_memory
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_program
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_program1_1
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_program2
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_program2_option
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_vertex_program3
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NVX_conditional_render
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NVX_gpu_memory_info
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NVX_nvenc_interop
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_thread_group
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_NV_shader_thread_shuffle
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_KHR_blend_equation_advanced
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_SGIS_generate_mipmap
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_SGIS_texture_lod
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_SGIX_depth_texture
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_SGIX_shadow
+[2015.10.22-20.27.06:278][  0]LogRHI:   GL_SUN_slice_accum
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 16384
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 2048
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 16384
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_SAMPLES: 32
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 32
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 32
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 32
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 192
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2015.10.22-20.27.06:279][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2015.10.22-20.27.06:279][  0]LogRHI: OpenGL MajorVersion = 3, MinorVersion = 2, ShaderPlatform = GLSL_150, FeatureLevel = SM4
+[2015.10.22-20.27.06:281][  0]LogRHI: Texture pool is 2150 MB (70% of 3072 MB)
+[2015.10.22-20.27.06:281][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../GranTurisClone/SpeedUnlimited/Intermediate/Shaders/WorkingDirectory/9766/).
+[2015.10.22-20.27.06:281][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../GranTurisClone/SpeedUnlimited/Intermediate/Shaders/tmp/000485DE060A1516001B01191AFFCBF7/'.
+[2015.10.22-20.27.06:281][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.10.22-20.27.07:490][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/usr/bin/mono "/home/cybermidknight/UE4Build/UnrealEngine-release/Engine/Binaries/DotNET/UnrealBuildTool.exe" -validateplatform -allplatforms'
+[2015.10.22-20.27.07:493][  0]LogHAL: FLinuxPlatformProcess::CreateProc: spawned child 9794
+[2015.10.22-20.27.08:088][  0]LogHAL: Child 9794 is no more running (zombie), Wait()ing immediately.
+[2015.10.22-20.27.08:088][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.10.22-20.27.08:316][  0]LogTemp:Display: Failed to get target platform HTML5TargetPlatform
+[2015.10.22-20.27.08:547][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.10.22-20.27.08:779][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.10.22-20.27.09:012][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.10.22-20.27.09:012][  0]LogTargetPlatformManager:Display: Building Assets For Linux
+[2015.10.22-20.27.09:452][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.10.22-20.27.09:453][  0]LogDerivedDataCache:Display: Starting with empty Boot cache
+[2015.10.22-20.27.09:453][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../GranTurisClone/SpeedUnlimited/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.10.22-20.27.09:453][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.10.22-20.27.09:453][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.10.22-20.27.09:453][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2015.10.22-20.27.09:459][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2015.10.22-20.27.09:459][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2015.10.22-20.27.09:459][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2015.10.22-20.27.09:601][  0]LogInit: Selected Device Profile: [Linux]
+[2015.10.22-20.27.09:854][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.10.22-20.27.09:854][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.10.22-20.27.10:072][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.10.22-20.27.10:517][  0]LogHAL: Linux SourceCodeAccessSettings: NullSourceCodeAccessor
+[2015.10.22-20.27.12:774][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2015.10.22-20.27.12:774][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2015.10.22-20.27.14:347][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.10.22-20.27.16:816][  0]SourceControl: Info Source control is disabled
+[2015.10.22-20.27.16:816][  0]SourceControl: Info Source control is disabled
+[2015.10.22-20.27.17:026][  0]LogDesktopPlatform: DesktopPlatformLinux is not using LinuxNativeDialogs.
+[2015.10.22-20.27.17:462][  0]SourceControl: Info Source control is disabled
+[2015.10.22-20.27.17:675][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/usr/bin/git version'
+[2015.10.22-20.27.17:679][  0]LogHAL: FLinuxPlatformProcess::CreateProc: spawned child 9819
+[2015.10.22-20.27.17:684][  0]LogHAL: Child 9819 is no more running (zombie), Wait()ing immediately.
+[2015.10.22-20.27.18:184][  0]SourceControl: Info Source control is disabled
+[2015.10.22-20.27.18:663][  0]LogAssetRegistry: FAssetRegistry took 0.0004 seconds to start up
+[2015.10.22-20.27.20:650][  0]LogObj: 29853 objects as part of root set at end of initial load.
+[2015.10.22-20.27.20:650][  0]LogUObjectAllocator: 6049216 out of 0 bytes used by permanent object pool.
+[2015.10.22-20.27.21:167][  0]LogEngine: Initializing Engine...
+[2015.10.22-20.27.22:002][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.10.22-20.27.22:005][  0]LogALAudio: ALAudio device opened : OpenAL Soft
+[2015.10.22-20.27.22:006][  0]LogALAudio: AL_VENDOR      : OpenAL Community
+[2015.10.22-20.27.22:006][  0]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2015.10.22-20.27.22:006][  0]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2015.10.22-20.27.22:006][  0]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2015.10.22-20.27.22:006][  0]LogInit: FAudioDevice initialized.
+[2015.10.22-20.27.22:042][  0]LogDerivedDataCache: Saved boot cache 0.04s 78MB ../../../../../GranTurisClone/SpeedUnlimited/DerivedDataCache/Boot.ddc.
+[2015.10.22-20.27.22:090][  0]LogInit: Texture streaming: Enabled
+[2015.10.22-20.27.22:397][  0]LogInit: Transaction tracking system initialized
+[2015.10.22-20.27.24:095][  0]BlueprintLog: New page: Editor Load
+[2015.10.22-20.27.28:471][  0]LocalizationService: Info Localization service is disabled
+[2015.10.22-20.27.30:369][  0]LogConsoleResponse:Display: 
+[2015.10.22-20.27.30:648][  0]LogFileCache: Scanning file cache for directory '/home/cybermidknight/GranTurisClone/SpeedUnlimited/Content/' took 0.00s
+[2015.10.22-20.27.30:648][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.10.22-20.27.32:859][  0]SourceControl: Info Source control is disabled
+[2015.10.22-20.27.32:861][  0]LogFactory: FactoryCreateBinary: PackFactory with PackFactory (0 0 /home/cybermidknight/UE4Build/UnrealEngine-release/FeaturePacks/StarterContent.upack)
+[2015.10.22-20.27.32:871][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2015.10.22-20.27.32:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2015.10.22-20.27.32:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2015.10.22-20.27.32:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2015.10.22-20.27.32:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2015.10.22-20.27.32:875][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2015.10.22-20.27.32:876][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2015.10.22-20.27.32:876][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2015.10.22-20.27.32:879][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2015.10.22-20.27.32:881][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2015.10.22-20.27.32:881][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2015.10.22-20.27.32:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2015.10.22-20.27.32:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2015.10.22-20.27.32:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/P_Explosion.uasset"
+[2015.10.22-20.27.32:884][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/P_Fire.uasset"
+[2015.10.22-20.27.32:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/P_Sparks.uasset"
+[2015.10.22-20.27.32:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2015.10.22-20.27.32:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/P_Smoke.uasset"
+[2015.10.22-20.27.32:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2015.10.22-20.27.32:890][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2015.10.22-20.27.32:890][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2015.10.22-20.27.32:893][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2015.10.22-20.27.32:895][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2015.10.22-20.27.32:895][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2015.10.22-20.27.32:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2015.10.22-20.27.32:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2015.10.22-20.27.32:897][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2015.10.22-20.27.32:897][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2015.10.22-20.27.32:897][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2015.10.22-20.27.32:898][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Explosion01.uasset"
+[2015.10.22-20.27.32:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2015.10.22-20.27.32:912][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Collapse02.uasset"
+[2015.10.22-20.27.32:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Smoke01.uasset"
+[2015.10.22-20.27.32:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Light02.uasset"
+[2015.10.22-20.27.32:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2015.10.22-20.27.32:922][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2015.10.22-20.27.32:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Explosion02.uasset"
+[2015.10.22-20.27.32:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2015.10.22-20.27.32:940][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Fire01.uasset"
+[2015.10.22-20.27.32:943][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Steam01.uasset"
+[2015.10.22-20.27.32:944][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2015.10.22-20.27.32:950][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2015.10.22-20.27.32:954][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2015.10.22-20.27.32:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2015.10.22-20.27.32:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2015.10.22-20.27.32:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2015.10.22-20.27.32:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2015.10.22-20.27.32:958][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2015.10.22-20.27.32:959][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Collapse01.uasset"
+[2015.10.22-20.27.32:959][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2015.10.22-20.27.32:963][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Light01.uasset"
+[2015.10.22-20.27.32:980][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2015.10.22-20.27.33:201][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2015.10.22-20.27.33:266][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Door.uasset"
+[2015.10.22-20.27.33:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Stairs.uasset"
+[2015.10.22-20.27.33:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2015.10.22-20.27.33:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2015.10.22-20.27.33:273][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2015.10.22-20.27.33:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2015.10.22-20.27.33:275][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Statue.uasset"
+[2015.10.22-20.27.33:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Couch.uasset"
+[2015.10.22-20.27.33:278][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2015.10.22-20.27.33:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2015.10.22-20.27.33:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2015.10.22-20.27.33:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2015.10.22-20.27.33:289][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Shelf.uasset"
+[2015.10.22-20.27.33:292][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_TableRound.uasset"
+[2015.10.22-20.27.33:293][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/MaterialSphere.uasset"
+[2015.10.22-20.27.33:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Rock.uasset"
+[2015.10.22-20.27.33:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Chair.uasset"
+[2015.10.22-20.27.33:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_Bush.uasset"
+[2015.10.22-20.27.33:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2015.10.22-20.27.33:297][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2015.10.22-20.27.33:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2015.10.22-20.27.33:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2015.10.22-20.27.33:300][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2015.10.22-20.27.33:300][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2015.10.22-20.27.33:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2015.10.22-20.27.33:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2015.10.22-20.27.33:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2015.10.22-20.27.33:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2015.10.22-20.27.33:303][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2015.10.22-20.27.33:303][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2015.10.22-20.27.33:305][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2015.10.22-20.27.33:307][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2015.10.22-20.27.33:308][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2015.10.22-20.27.33:308][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2015.10.22-20.27.33:308][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2015.10.22-20.27.33:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2015.10.22-20.27.33:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2015.10.22-20.27.33:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2015.10.22-20.27.33:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2015.10.22-20.27.33:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2015.10.22-20.27.33:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2015.10.22-20.27.33:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2015.10.22-20.27.33:317][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2015.10.22-20.27.33:320][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2015.10.22-20.27.33:320][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2015.10.22-20.27.33:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2015.10.22-20.27.33:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2015.10.22-20.27.33:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2015.10.22-20.27.33:322][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2015.10.22-20.27.33:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2015.10.22-20.27.33:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2015.10.22-20.27.33:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2015.10.22-20.27.33:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2015.10.22-20.27.33:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2015.10.22-20.27.33:327][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2015.10.22-20.27.33:329][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2015.10.22-20.27.33:329][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2015.10.22-20.27.33:330][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2015.10.22-20.27.33:331][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2015.10.22-20.27.33:331][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2015.10.22-20.27.33:332][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2015.10.22-20.27.33:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2015.10.22-20.27.33:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2015.10.22-20.27.33:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2015.10.22-20.27.33:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2015.10.22-20.27.33:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2015.10.22-20.27.33:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2015.10.22-20.27.33:343][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2015.10.22-20.27.33:348][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2015.10.22-20.27.33:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2015.10.22-20.27.33:424][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2015.10.22-20.27.33:456][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2015.10.22-20.27.33:480][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2015.10.22-20.27.33:488][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2015.10.22-20.27.33:492][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2015.10.22-20.27.33:509][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2015.10.22-20.27.33:520][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2015.10.22-20.27.33:523][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2015.10.22-20.27.33:546][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2015.10.22-20.27.33:568][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2015.10.22-20.27.33:585][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2015.10.22-20.27.33:614][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2015.10.22-20.27.33:624][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2015.10.22-20.27.33:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2015.10.22-20.27.33:665][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2015.10.22-20.27.33:692][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2015.10.22-20.27.33:699][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2015.10.22-20.27.33:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2015.10.22-20.27.33:742][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2015.10.22-20.27.33:770][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2015.10.22-20.27.33:818][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2015.10.22-20.27.33:863][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2015.10.22-20.27.33:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2015.10.22-20.27.33:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2015.10.22-20.27.33:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2015.10.22-20.27.33:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2015.10.22-20.27.33:979][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2015.10.22-20.27.34:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2015.10.22-20.27.34:057][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2015.10.22-20.27.34:074][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2015.10.22-20.27.34:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2015.10.22-20.27.34:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2015.10.22-20.27.34:174][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2015.10.22-20.27.34:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2015.10.22-20.27.34:239][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2015.10.22-20.27.34:241][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2015.10.22-20.27.34:251][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2015.10.22-20.27.34:272][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2015.10.22-20.27.34:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2015.10.22-20.27.34:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2015.10.22-20.27.34:351][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2015.10.22-20.27.34:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2015.10.22-20.27.34:377][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2015.10.22-20.27.34:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2015.10.22-20.27.34:409][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2015.10.22-20.27.34:425][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2015.10.22-20.27.34:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2015.10.22-20.27.34:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2015.10.22-20.27.34:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2015.10.22-20.27.34:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2015.10.22-20.27.34:510][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2015.10.22-20.27.34:554][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2015.10.22-20.27.34:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2015.10.22-20.27.34:639][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2015.10.22-20.27.34:674][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2015.10.22-20.27.34:719][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2015.10.22-20.27.34:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2015.10.22-20.27.34:799][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2015.10.22-20.27.34:824][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2015.10.22-20.27.34:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Water_M.uasset"
+[2015.10.22-20.27.34:874][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2015.10.22-20.27.34:901][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2015.10.22-20.27.34:907][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2015.10.22-20.27.34:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2015.10.22-20.27.34:942][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2015.10.22-20.27.34:989][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2015.10.22-20.27.35:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2015.10.22-20.27.35:032][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2015.10.22-20.27.35:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2015.10.22-20.27.35:094][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2015.10.22-20.27.35:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2015.10.22-20.27.35:157][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2015.10.22-20.27.35:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2015.10.22-20.27.35:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2015.10.22-20.27.35:280][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2015.10.22-20.27.35:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2015.10.22-20.27.35:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2015.10.22-20.27.35:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2015.10.22-20.27.35:423][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2015.10.22-20.27.35:447][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2015.10.22-20.27.35:468][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2015.10.22-20.27.35:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2015.10.22-20.27.35:564][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2015.10.22-20.27.35:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2015.10.22-20.27.35:613][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2015.10.22-20.27.35:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2015.10.22-20.27.35:648][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Water_N.uasset"
+[2015.10.22-20.27.35:657][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Door_N.uasset"
+[2015.10.22-20.27.35:684][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2015.10.22-20.27.35:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2015.10.22-20.27.35:702][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2015.10.22-20.27.35:726][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2015.10.22-20.27.35:747][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2015.10.22-20.27.35:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2015.10.22-20.27.35:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Door_M.uasset"
+[2015.10.22-20.27.35:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2015.10.22-20.27.35:808][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2015.10.22-20.27.35:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2015.10.22-20.27.35:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2015.10.22-20.27.35:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Maps/StarterMap.umap"
+[2015.10.22-20.27.35:993][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Maps/Minimal_Default.umap"
+[2015.10.22-20.27.35:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2015.10.22-20.27.35:998][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2015.10.22-20.27.35:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2015.10.22-20.27.36:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2015.10.22-20.27.36:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2015.10.22-20.27.36:002][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2015.10.22-20.27.36:002][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2015.10.22-20.27.36:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2015.10.22-20.27.36:004][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2015.10.22-20.27.36:005][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2015.10.22-20.27.36:006][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2015.10.22-20.27.36:006][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2015.10.22-20.27.36:010][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2015.10.22-20.27.36:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2015.10.22-20.27.36:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2015.10.22-20.27.36:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2015.10.22-20.27.36:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2015.10.22-20.27.36:013][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2015.10.22-20.27.36:014][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2015.10.22-20.27.36:015][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2015.10.22-20.27.36:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2015.10.22-20.27.36:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2015.10.22-20.27.36:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2015.10.22-20.27.36:020][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2015.10.22-20.27.36:022][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2015.10.22-20.27.36:023][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2015.10.22-20.27.36:024][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2015.10.22-20.27.36:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2015.10.22-20.27.36:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2015.10.22-20.27.36:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2015.10.22-20.27.36:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2015.10.22-20.27.36:029][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Glass.uasset"
+[2015.10.22-20.27.36:030][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2015.10.22-20.27.36:030][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2015.10.22-20.27.36:033][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2015.10.22-20.27.36:036][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2015.10.22-20.27.36:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2015.10.22-20.27.36:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2015.10.22-20.27.36:038][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2015.10.22-20.27.36:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2015.10.22-20.27.36:040][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2015.10.22-20.27.36:042][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2015.10.22-20.27.36:043][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2015.10.22-20.27.36:043][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2015.10.22-20.27.36:131][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
+[2015.10.22-20.27.36:198][  0]LogSavePackage: Save=16.396999ms
+[2015.10.22-20.27.36:198][  0]LogSavePackage: Moving '../../../../../GranTurisClone/SpeedUnlimited/Saved/Wall_Window_400x400053172AA240A1516001B00B61CC80A2F.tmp' to '../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_Window_400x400.uasset'
+[2015.10.22-20.27.36:199][  0]LogSavePackage: Total save time: 18.130899ms
+[2015.10.22-20.27.36:199][  0]LogSavePackage:Warning: Finished SavePackage ../../../../../GranTurisClone/SpeedUnlimited/Content/StarterContent/Architecture/Wall_Window_400x400.uasset
+[2015.10.22-20.27.36:200][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2015.10.22-20.27.36:201][  0]Cmd: MAP LOAD FILE="../../../../../GranTurisClone/SpeedUnlimited/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
+[2015.10.22-20.27.36:201][  0]LightingResults: New page: Lighting Build
+[2015.10.22-20.27.36:360][  0]MapCheck: New page: Map Check
+[2015.10.22-20.27.36:360][  0]LightingResults: New page: Lighting Build
+[2015.10.22-20.27.36:372][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x10bdb7a0
+[2015.10.22-20.27.36:885][  0]LogMaterial: Missing cached shader map for material Fixed_Template_Master, compiling. 
+[2015.10.22-20.27.37:119][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/home/cybermidknight/UE4Build/UnrealEngine-release/Engine/Binaries/Linux/ShaderCompileWorker "/home/cybermidknight/GranTurisClone/SpeedUnlimited/Intermediate/Shaders/tmp/000485DE060A1516001B01191AFFCBF7/0/" 9766 0 WorkerInputOnly.in WorkerOutputOnly.out -communicatethroughfile  -Multiprocess'
+[2015.10.22-20.27.37:120][  0]LogHAL: Changed child's priority (nice value) to 10 (change from 0)
+[2015.10.22-20.27.37:120][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/home/cybermidknight/UE4Build/UnrealEngine-release/Engine/Binaries/Linux/ShaderCompileWorker "/home/cybermidknight/GranTurisClone/SpeedUnlimited/Intermediate/Shaders/tmp/000485DE060A1516001B01191AFFCBF7/1/" 9766 1 WorkerInputOnly.in WorkerOutputOnly.out -communicatethroughfile  -Multiprocess'
+[2015.10.22-20.27.37:120][  0]LogHAL: Changed child's priority (nice value) to 10 (change from 0)
+[2015.10.22-20.27.37:120][  0]LogHAL: FLinuxPlatformProcess::CreateProc: '/home/cybermidknight/UE4Build/UnrealEngine-release/Engine/Binaries/Linux/ShaderCompileWorker "/home/cybermidknight/GranTurisClone/SpeedUnlimited/Intermediate/Shaders/tmp/000485DE060A1516001B01191AFFCBF7/2/" 9766 2 WorkerInputOnly.in WorkerOutputOnly.out -communicatethroughfile  -Multiprocess'
+[2015.10.22-20.27.37:120][  0]LogHAL: Changed child's priority (nice value) to 10 (change from 0)
+[2015.10.22-20.27.37:128][  0]LogMaterial: Missing cached shader map for material Landscape, compiling. 
+[2015.10.22-20.27.37:182][  0]LogMaterial: Missing cached shader map for material Landscape, compiling. 
+[2015.10.22-20.27.37:204][  0]LogMaterial: Missing cached shader map for material Landscape, compiling. 
+[2015.10.22-20.27.37:221][  0]LogTexture:Display: Building textures: Texture2D_12 (BGRA8)
+[2015.10.22-20.27.37:245][  0]LogTexture:Display: Building textures: Texture2D_15 (BGRA8)
+[2015.10.22-20.27.37:266][  0]LogTexture:Display: Building textures: Texture2D_6 (BGRA8)
+[2015.10.22-20.27.37:267][  0]LogTexture:Display: Building textures: Texture2D_13 (BGRA8)
+[2015.10.22-20.27.37:274][  0]LogTexture:Display: Building textures: Texture2D_7 (BGRA8)
+[2015.10.22-20.27.37:277][  0]LogTexture:Display: Building textures: Texture2D_14 (BGRA8)
+[2015.10.22-20.27.37:280][  0]LogTexture:Display: Building textures: Texture2D_11 (BGRA8)
+[2015.10.22-20.27.37:323][  0]LogTexture:Display: Building textures: HQ_Lightmap0_11 (AutoDXT)
+[2015.10.22-20.27.37:574][  0]LogTexture:Display: Building textures: HQ_Lightmap0_17 (AutoDXT)
+[2015.10.22-20.27.37:626][  0]LogTexture:Display: Building textures: HQ_Lightmap0_25 (AutoDXT)
+[2015.10.22-20.27.37:670][  0]LogTexture:Display: Building textures: HQ_Lightmap0_29 (AutoDXT)
+[2015.10.22-20.27.37:683][  0]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2015.10.22-20.27.37:756][  0]LogTexture:Display: Building textures: HQ_Lightmap1_10 (AutoDXT)
+[2015.10.22-20.27.37:816][  0]LogTexture:Display: Building textures: HQ_Lightmap1_12 (AutoDXT)
+[2015.10.22-20.27.37:851][  0]LogTexture:Display: Building textures: HQ_Lightmap1_13 (AutoDXT)
+[2015.10.22-20.27.38:008][  0]LogTexture:Display: Building textures: HQ_Lightmap1_14 (AutoDXT)
+[2015.10.22-20.27.38:098][  0]LogTexture:Display: Building textures: HQ_Lightmap1_15 (AutoDXT)
+[2015.10.22-20.27.38:214][  0]LogTexture:Display: Building textures: HQ_Lightmap1_16 (AutoDXT)
+[2015.10.22-20.27.38:257][  0]LogTexture:Display: Building textures: HQ_Lightmap1_18 (AutoDXT)
+[2015.10.22-20.27.38:296][  0]LogTexture:Display: Building textures: HQ_Lightmap1_19 (AutoDXT)
+[2015.10.22-20.27.38:334][  0]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2015.10.22-20.27.38:395][  0]LogTexture:Display: Building textures: HQ_Lightmap1_20 (AutoDXT)
+[2015.10.22-20.27.38:436][  0]LogTexture:Display: Building textures: HQ_Lightmap1_21 (AutoDXT)
+[2015.10.22-20.27.38:487][  0]LogTexture:Display: Building textures: HQ_Lightmap1_22 (AutoDXT)
+[2015.10.22-20.27.38:522][  0]LogTexture:Display: Building textures: HQ_Lightmap1_23 (AutoDXT)
+[2015.10.22-20.27.38:556][  0]LogTexture:Display: Building textures: HQ_Lightmap1_24 (AutoDXT)
+[2015.10.22-20.27.38:603][  0]LogTexture:Display: Building textures: HQ_Lightmap1_26 (AutoDXT)
+[2015.10.22-20.27.38:653][  0]LogTexture:Display: Building textures: HQ_Lightmap1_27 (AutoDXT)
+[2015.10.22-20.27.38:709][  0]LogTexture:Display: Building textures: HQ_Lightmap1_28 (AutoDXT)
+[2015.10.22-20.27.38:808][  0]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
+[2015.10.22-20.27.39:155][  0]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
+[2015.10.22-20.27.39:346][  0]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
+[2015.10.22-20.27.39:485][  0]LogTexture:Display: Building textures: HQ_Lightmap1_6 (AutoDXT)
+[2015.10.22-20.27.39:713][  0]LogTexture:Display: Building textures: HQ_Lightmap1_7 (AutoDXT)
+[2015.10.22-20.27.39:948][  0]LogTexture:Display: Building textures: HQ_Lightmap1_8 (AutoDXT)
+[2015.10.22-20.27.40:126][  0]LogTexture:Display: Building textures: HQ_Lightmap1_9 (AutoDXT)
+[2015.10.22-20.27.40:284][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_11 (DXT1)
+[2015.10.22-20.27.40:366][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_16 (DXT1)
+[2015.10.22-20.27.40:387][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_17 (DXT1)
+[2015.10.22-20.27.40:417][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_19 (DXT1)
+[2015.10.22-20.27.40:452][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_20 (DXT1)
+[2015.10.22-20.27.40:493][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_21 (DXT1)
+[2015.10.22-20.27.40:554][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_23 (DXT1)
+[2015.10.22-20.27.40:600][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_26 (DXT1)
+[2015.10.22-20.27.40:629][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_29 (DXT1)
+[2015.10.22-20.27.40:639][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2015.10.22-20.27.40:665][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_10 (DXT1)
+[2015.10.22-20.27.40:684][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_12 (DXT1)
+[2015.10.22-20.27.40:703][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_13 (DXT1)
+[2015.10.22-20.27.40:754][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_14 (DXT1)
+[2015.10.22-20.27.40:783][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_15 (DXT1)
+[2015.10.22-20.27.40:828][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_18 (DXT1)
+[2015.10.22-20.27.40:869][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2015.10.22-20.27.40:900][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_22 (DXT1)
+[2015.10.22-20.27.40:939][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_24 (DXT1)
+[2015.10.22-20.27.40:983][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_25 (DXT1)
+[2015.10.22-20.27.41:029][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_27 (DXT1)
+[2015.10.22-20.27.41:067][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_28 (DXT1)
+[2015.10.22-20.27.41:161][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (DXT1)
+[2015.10.22-20.27.41:272][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_4 (DXT1)
+[2015.10.22-20.27.41:336][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (DXT1)
+[2015.10.22-20.27.41:403][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_6 (DXT1)
+[2015.10.22-20.27.41:501][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_7 (DXT1)
+[2015.10.22-20.27.41:634][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_8 (DXT1)
+[2015.10.22-20.27.41:718][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_9 (DXT1)
+[2015.10.22-20.27.41:762][  0]LogTexture:Display: Building textures: SkyOcclusion0_11 (AutoDXT)
+[2015.10.22-20.27.41:860][  0]LogTexture:Display: Building textures: SkyOcclusion0_16 (AutoDXT)
+[2015.10.22-20.27.41:883][  0]LogTexture:Display: Building textures: SkyOcclusion0_17 (AutoDXT)
+[2015.10.22-20.27.41:920][  0]LogTexture:Display: Building textures: SkyOcclusion0_19 (AutoDXT)
+[2015.10.22-20.27.41:946][  0]LogTexture:Display: Building textures: SkyOcclusion0_20 (AutoDXT)
+[2015.10.22-20.27.41:984][  0]LogTexture:Display: Building textures: SkyOcclusion0_21 (AutoDXT)
+[2015.10.22-20.27.42:010][  0]LogTexture:Display: Building textures: SkyOcclusion0_23 (AutoDXT)
+[2015.10.22-20.27.42:052][  0]LogTexture:Display: Building textures: SkyOcclusion0_26 (AutoDXT)
+[2015.10.22-20.27.42:097][  0]LogTexture:Display: Building textures: SkyOcclusion0_29 (AutoDXT)
+[2015.10.22-20.27.42:107][  0]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
+[2015.10.22-20.27.42:139][  0]LogTexture:Display: Building textures: SkyOcclusion1_10 (AutoDXT)
+[2015.10.22-20.27.42:161][  0]LogTexture:Display: Building textures: SkyOcclusion1_12 (AutoDXT)
+[2015.10.22-20.27.42:177][  0]LogTexture:Display: Building textures: SkyOcclusion1_13 (AutoDXT)
+[2015.10.22-20.27.42:229][  0]LogTexture:Display: Building textures: SkyOcclusion1_14 (AutoDXT)
+[2015.10.22-20.27.42:263][  0]LogTexture:Display: Building textures: SkyOcclusion1_15 (AutoDXT)
+[2015.10.22-20.27.42:351][  0]LogTexture:Display: Building textures: SkyOcclusion1_18 (AutoDXT)
+[2015.10.22-20.27.42:386][  0]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT)
+[2015.10.22-20.27.42:414][  0]LogTexture:Display: Building textures: SkyOcclusion1_22 (AutoDXT)
+[2015.10.22-20.27.42:447][  0]LogTexture:Display: Building textures: SkyOcclusion1_24 (AutoDXT)
+[2015.10.22-20.27.42:473][  0]LogTexture:Display: Building textures: SkyOcclusion1_25 (AutoDXT)
+[2015.10.22-20.27.42:501][  0]LogTexture:Display: Building textures: SkyOcclusion1_27 (AutoDXT)
+[2015.10.22-20.27.42:529][  0]LogTexture:Display: Building textures: SkyOcclusion1_28 (AutoDXT)
+[2015.10.22-20.27.42:578][  0]LogTexture:Display: Building textures: SkyOcclusion1_3 (AutoDXT)
+[2015.10.22-20.27.42:732][  0]LogTexture:Display: Building textures: SkyOcclusion1_4 (AutoDXT)
+[2015.10.22-20.27.42:807][  0]LogTexture:Display: Building textures: SkyOcclusion1_5 (AutoDXT)
+[2015.10.22-20.27.42:862][  0]LogTexture:Display: Building textures: SkyOcclusion1_6 (AutoDXT)
+[2015.10.22-20.27.42:965][  0]LogTexture:Display: Building textures: SkyOcclusion1_7 (AutoDXT)
+[2015.10.22-20.27.43:068][  0]LogTexture:Display: Building textures: SkyOcclusion1_8 (AutoDXT)
+[2015.10.22-20.27.43:153][  0]LogTexture:Display: Building textures: SkyOcclusion1_9 (AutoDXT)
+[2015.10.22-20.27.43:208][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_956 (G8)
+[2015.10.22-20.27.43:216][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_957 (G8)
+[2015.10.22-20.27.43:225][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_958 (G8)
+[2015.10.22-20.27.43:254][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_959 (G8)
+[2015.10.22-20.27.43:272][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_960 (G8)
+[2015.10.22-20.27.43:281][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_961 (G8)
+[2015.10.22-20.27.43:303][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_962 (G8)
+[2015.10.22-20.27.43:334][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_963 (G8)
+[2015.10.22-20.27.43:359][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_964 (G8)
+[2015.10.22-20.27.43:372][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_965 (G8)
+[2015.10.22-20.27.43:385][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_966 (G8)
+[2015.10.22-20.27.43:407][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_967 (G8)
+[2015.10.22-20.27.43:411][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_968 (G8)
+[2015.10.22-20.27.43:421][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_969 (G8)
+[2015.10.22-20.27.43:427][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_970 (G8)
+[2015.10.22-20.27.43:432][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_971 (G8)
+[2015.10.22-20.27.43:434][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_972 (G8)
+[2015.10.22-20.27.43:436][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_973 (G8)
+[2015.10.22-20.27.43:441][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_974 (G8)
+[2015.10.22-20.27.43:442][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_975 (G8)
+[2015.10.22-20.27.43:444][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_976 (G8)
+[2015.10.22-20.27.43:446][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_977 (G8)
+[2015.10.22-20.27.43:448][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_978 (G8)
+[2015.10.22-20.27.43:449][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_979 (G8)
+[2015.10.22-20.27.43:453][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_980 (G8)
+[2015.10.22-20.27.43:461][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_981 (G8)
+[2015.10.22-20.27.43:465][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_982 (G8)
+[2015.10.22-20.27.43:468][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_983 (G8)
+[2015.10.22-20.27.43:471][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_984 (G8)
+[2015.10.22-20.27.43:602][  0]LogStaticMesh: Building static mesh BumpWave...
+[2015.10.22-20.27.43:606][  0]LogStaticMesh: Built static mesh [0.004252.2s] /Game/VehicleAdv/ArenaMesh/BumpWave.BumpWave
+[2015.10.22-20.27.43:606][  0]LogStaticMesh: Building static mesh BumpWaveSmall...
+[2015.10.22-20.27.43:608][  0]LogStaticMesh: Built static mesh [0.001625.2s] /Game/VehicleAdv/ArenaMesh/BumpWaveSmall.BumpWaveSmall
+[2015.10.22-20.27.43:608][  0]LogStaticMesh: Building static mesh BumpWedge...
+[2015.10.22-20.27.43:610][  0]LogStaticMesh: Built static mesh [0.001715.2s] /Game/VehicleAdv/ArenaMesh/BumpWedge.BumpWedge
+[2015.10.22-20.27.43:613][  0]LogStaticMesh: Building static mesh LoopSmall...
+[2015.10.22-20.27.43:622][  0]LogStaticMesh: Built static mesh [0.009355.2s] /Game/VehicleAdv/ArenaMesh/LoopSmall.LoopSmall
+[2015.10.22-20.27.43:623][  0]LogStaticMesh: Building static mesh LoopBig...
+[2015.10.22-20.27.43:629][  0]LogStaticMesh: Built static mesh [0.006849.2s] /Game/VehicleAdv/ArenaMesh/LoopBig.LoopBig
+[2015.10.22-20.27.43:630][  0]LogStaticMesh: Building static mesh RampLarge...
+[2015.10.22-20.27.43:633][  0]LogStaticMesh: Built static mesh [0.001580.2s] /Game/VehicleAdv/ArenaMesh/RampLarge.RampLarge
+[2015.10.22-20.27.43:633][  0]LogStaticMesh: Building static mesh StraightFull...
+[2015.10.22-20.27.43:636][  0]LogStaticMesh: Built static mesh [0.002806.2s] /Game/VehicleAdv/ArenaMesh/StraightFull.StraightFull
+[2015.10.22-20.27.43:636][  0]LogStaticMesh: Building static mesh StraightHalf...
+[2015.10.22-20.27.43:637][  0]LogStaticMesh: Built static mesh [0.000975.2s] /Game/VehicleAdv/ArenaMesh/StraightHalf.StraightHalf
+[2015.10.22-20.27.43:638][  0]LogStaticMesh: Building static mesh StraightQuarter...
+[2015.10.22-20.27.43:641][  0]LogStaticMesh: Built static mesh [0.001142.2s] /Game/VehicleAdv/ArenaMesh/StraightQuarter.StraightQuarter
+[2015.10.22-20.27.43:642][  0]LogStaticMesh: Building static mesh Turn_45...
+[2015.10.22-20.27.43:646][  0]LogStaticMesh: Built static mesh [0.004910.2s] /Game/VehicleAdv/ArenaMesh/Turn_45.Turn_45
+[2015.10.22-20.27.43:647][  0]LogStaticMesh: Building static mesh turn_22andhalf...
+[2015.10.22-20.27.43:648][  0]LogStaticMesh: Built static mesh [0.001952.2s] /Game/VehicleAdv/ArenaMesh/turn_22andhalf.turn_22andhalf
+[2015.10.22-20.27.43:649][  0]LogStaticMesh: Building static mesh Turn_90...
+[2015.10.22-20.27.43:656][  0]LogStaticMesh: Built static mesh [0.006921.2s] /Game/VehicleAdv/ArenaMesh/Turn_90.Turn_90
+[2015.10.22-20.27.43:657][  0]LogStaticMesh: Building static mesh Turn_90Large...
+[2015.10.22-20.27.43:669][  0]LogStaticMesh: Built static mesh [0.013010.2s] /Game/VehicleAdv/ArenaMesh/Turn_90Large.Turn_90Large
+[2015.10.22-20.27.43:675][  0]LogMaterial: Missing cached shader map for material MasterGrid, compiling. 
+[2015.10.22-20.27.43:709][  0]LogMaterial: Missing cached shader map for material MasterSolidColor, compiling. 
+[2015.10.22-20.27.43:764][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Engine_Speed_05_Loop...
+[2015.10.22-20.27.43:815][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Engine_Speed_01_Loop...
+[2015.10.22-20.27.43:910][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Engine_Speed_03_Loop...
+[2015.10.22-20.27.44:029][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.10.22-20.27.44:115][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.10.22-20.27.44:115][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.10.22-20.27.44:137][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 21.32ms to complete.
+[2015.10.22-20.27.44:137][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 7.936
+[2015.10.22-20.27.44:785][  0]LogCollectionManager: Loaded 0 collections in 0.000932 seconds
+[2015.10.22-20.27.44:803][  0]LogFileCache: Scanning file cache for directory '/home/cybermidknight/GranTurisClone/SpeedUnlimited/Saved/Collections/' took 0.00s
+[2015.10.22-20.27.44:803][  0]LogFileCache: Scanning file cache for directory '/home/cybermidknight/GranTurisClone/SpeedUnlimited/Content/Developers/GenericUser/Collections/' took 0.00s
+[2015.10.22-20.27.44:803][  0]LogFileCache: Scanning file cache for directory '/home/cybermidknight/GranTurisClone/SpeedUnlimited/Content/Collections/' took 0.00s
+[2015.10.22-20.27.44:803][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 1920 classes and 327 folders.
+[2015.10.22-20.27.44:805][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2015.10.22-20.27.45:192][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2015.10.22-20.27.45:453][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2015.10.22-20.27.45:627][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 0 folders.
+[2015.10.22-20.27.45:861][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.10.22-20.27.45:988][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.10.22-20.27.46:113][  0]LogLoad: Full Startup: 43.43 seconds (BP compile: 0.27 seconds)
+[2015.10.22-20.27.46:694][  0]LogRenderer: Reallocating scene render targets to support 2428x1288 (Frame:3).
+[2015.10.22-20.27.47:055][  0]LogSlate:Warning: Slate: Had to block on waiting for a draw buffer
+[2015.10.22-20.27.47:229][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2015.10.22-20.27.47:279][  1]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 504/400 MB (ok in editor, bad on fixed memory platform)
+[2015.10.22-20.27.47:280][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2015.10.22-20.27.47:593][  6]LogAssetRegistry: Asset discovery search completed in 28.9300 seconds
+[2015.10.22-20.27.47:593][  6]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2015.10.22-20.27.47:593][  6]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000050 seconds (updated 0 objects)
+[2015.10.22-20.27.58:856][556]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.10.22-20.27.58:857][556]PIE: New page: PIE session: VehicleAdvExampleMap (22 Oct 2015 22:27:58)
+[2015.10.22-20.27.58:857][556]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2015.10.22-20.27.58:917][556]LogPlayLevel: PIE: StaticDuplicateObject took: (0.060652s)
+[2015.10.22-20.27.58:918][556]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.10.22-20.27.58:918][556]LogPlayLevel: PIE: World Init took: (0.000527s)
+[2015.10.22-20.27.58:918][556]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.061425s)
+[2015.10.22-20.27.58:963][556]LogALAudio: ALAudio device opened : OpenAL Soft
+[2015.10.22-20.27.58:964][556]LogALAudio: AL_VENDOR      : OpenAL Community
+[2015.10.22-20.27.58:964][556]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2015.10.22-20.27.58:965][556]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2015.10.22-20.27.58:965][556]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2015.10.22-20.27.58:966][556]LogInit: FAudioDevice initialized.
+[2015.10.22-20.27.59:116][556]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2015.10.22-20.27.59:257][556]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.10.22-21.27.59
+[2015.10.22-20.27.59:257][556]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.10.22-20.27.59:258][556]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.10.22-20.27.59:260][556]LogWorld: Bringing up level for play took: 0.140240
+[2015.10.22-20.27.59:265][556]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.407
+[2015.10.22-20.27.59:500][557]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 462/400 MB (ok in editor, bad on fixed memory platform)
+[2015.10.22-20.28.18:965][512]LogALAudio: Closing ALAudio device : OpenAL Soft
+[2015.10.22-20.28.18:968][512]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0xe387ac0
+[2015.10.22-20.28.19:393][517]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.10.22-20.28.19:393][517]PIE: New page: PIE session: VehicleAdvExampleMap (22 Oct 2015 22:28:19)
+[2015.10.22-20.28.19:393][517]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2015.10.22-20.28.19:453][517]LogPlayLevel: PIE: StaticDuplicateObject took: (0.059665s)
+[2015.10.22-20.28.19:453][517]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.10.22-20.28.19:453][517]LogPlayLevel: PIE: World Init took: (0.000431s)
+[2015.10.22-20.28.19:453][517]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.060320s)
+[2015.10.22-20.28.19:476][517]LogALAudio: ALAudio device opened : OpenAL Soft
+[2015.10.22-20.28.19:478][517]LogALAudio: AL_VENDOR      : OpenAL Community
+[2015.10.22-20.28.19:478][517]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2015.10.22-20.28.19:478][517]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2015.10.22-20.28.19:478][517]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2015.10.22-20.28.19:478][517]LogInit: FAudioDevice initialized.
+[2015.10.22-20.28.19:553][517]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2015.10.22-20.28.19:666][517]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.10.22-21.28.19
+[2015.10.22-20.28.19:666][517]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.10.22-20.28.19:667][517]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.10.22-20.28.19:668][517]LogWorld: Bringing up level for play took: 0.113336
+[2015.10.22-20.28.19:671][517]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.278
+[2015.10.22-20.29.29:354][204]LogALAudio: Closing ALAudio device : OpenAL Soft
+[2015.10.22-20.29.29:375][205]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7f06941bd460
+[2015.10.22-20.30.33:579][289]LogHAL: Child 9840 is no more running (zombie), Wait()ing immediately.
+[2015.10.22-20.30.33:579][289]LogHAL: Child 9838 is no more running (zombie), Wait()ing immediately.
+[2015.10.22-20.30.34:578][292]LogHAL: Child 9839 is no more running (zombie), Wait()ing immediately.
+[2015.10.22-20.30.55:290][352]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 504/400 MB (ok in editor, bad on fixed memory platform)
+[2015.10.22-20.31.01:298][370]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2015.10.22-20.31.01:391][371]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 516/400 MB (ok in editor, bad on fixed memory platform)
+[2015.10.22-20.31.02:846][440]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.10.22-20.31.02:846][440]PIE: New page: PIE session: VehicleAdvExampleMap (22 Oct 2015 22:31:02)
+[2015.10.22-20.31.02:846][440]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2015.10.22-20.31.02:901][440]LogPlayLevel: PIE: StaticDuplicateObject took: (0.055063s)
+[2015.10.22-20.31.02:901][440]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.10.22-20.31.02:901][440]LogPlayLevel: PIE: World Init took: (0.000408s)
+[2015.10.22-20.31.02:902][440]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.055712s)
+[2015.10.22-20.31.02:916][440]LogALAudio: ALAudio device opened : OpenAL Soft
+[2015.10.22-20.31.02:916][440]LogALAudio: AL_VENDOR      : OpenAL Community
+[2015.10.22-20.31.02:917][440]LogALAudio: AL_RENDERER    : OpenAL Soft
+[2015.10.22-20.31.02:917][440]LogALAudio: AL_VERSION     : 1.1 ALSOFT 1.15.1
+[2015.10.22-20.31.02:917][440]LogALAudio: AL_EXTENSIONS  : AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFTX_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_source_latency
+[2015.10.22-20.31.02:917][440]LogInit: FAudioDevice initialized.
+[2015.10.22-20.31.03:040][440]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2015.10.22-20.31.03:112][440]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.10.22-21.31.03
+[2015.10.22-20.31.03:112][440]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.10.22-20.31.03:113][440]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.10.22-20.31.03:114][440]LogWorld: Bringing up level for play took: 0.071414
+[2015.10.22-20.31.03:116][440]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.27
+[2015.10.22-20.31.46:208][ 44]LogALAudio: Closing ALAudio device : OpenAL Soft
+[2015.10.22-20.31.46:240][ 45]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x183194e0
+[2015.10.22-20.31.57:117][660]Cmd: QUIT_EDITOR
+[2015.10.22-20.31.57:190][660]LogALAudio: Closing ALAudio device : OpenAL Soft
+[2015.10.22-20.31.57:230][660]LogExit: Preparing to exit.
+[2015.10.22-20.31.57:926][660]LogExit: Editor shut down
+[2015.10.22-20.31.57:926][660]LogExit: Transaction tracking system shut down
+[2015.10.22-20.31.57:926][660]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x21751e0
+[2015.10.22-20.31.57:927][660]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7f062c3a1dc0
+[2015.10.22-20.31.57:929][660]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7f065b6f5aa0
+[2015.10.22-20.31.58:052][660]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0x7f062c2318e0
+[2015.10.22-20.31.58:052][660]LogExit: Object subsystem successfully closed.
+[2015.10.22-20.31.58:563][660]LogModuleManager: Shutting down and abandoning module CrashTracker (169)
+[2015.10.22-20.31.58:563][660]LogModuleManager: Shutting down and abandoning module SceneOutliner (168)
+[2015.10.22-20.31.58:563][660]LogModuleManager: Shutting down and abandoning module SuperSearch (167)
+[2015.10.22-20.31.58:563][660]LogModuleManager: Shutting down and abandoning module WidgetCarousel (166)
+[2015.10.22-20.31.58:563][660]LogModuleManager: Shutting down and abandoning module AddContentDialog (165)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module EditorWidgets (164)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module CollectionManager (163)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module StatsViewer (162)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module FoliageEdit (161)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module LandscapeEditor (160)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module ActorPickerMode (159)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module GeometryMode (158)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module TextureAlignMode (157)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module BspMode (156)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module PlacementMode (155)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module AutomationWorker (154)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module SmartSnapping (153)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module CharacterAI (152)
+[2015.10.22-20.31.58:564][660]LogModuleManager: Shutting down and abandoning module ViewportSnapping (151)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module LogVisualizer (150)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (149)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module IntroTutorials (148)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (147)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (146)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (145)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (144)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module MergeActors (143)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module SizeMap (142)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module TreeMap (141)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module ReferenceViewer (140)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module LocalizationService (139)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (138)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module HardwareTargeting (137)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (136)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module UndoHistory (135)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (134)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module UserFeedback (133)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module XmlParser (132)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module Blutility (131)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (130)
+[2015.10.22-20.31.58:565][660]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (129)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module InputBindingEditor (128)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (127)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module SettingsEditor (126)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module ProjectLauncher (125)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module SessionFrontend (124)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module ProfilerClient (123)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (122)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module DeviceManager (121)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module AutomationController (120)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module AutomationWindow (119)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module Layers (118)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (117)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module DetailCustomizations (116)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module PackagesDialog (115)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module Persona (114)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module Kismet (113)
+[2015.10.22-20.31.58:566][660]LogModuleManager: Shutting down and abandoning module GraphEditor (112)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module ClassViewer (111)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module Toolbox (110)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module ModuleUI (109)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module MovieSceneTools (108)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module OutputLog (107)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module GammaUI (106)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module Documentation (105)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (104)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (103)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module AnalyticsET (102)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module Analytics (101)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module AITestSuite (100)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module GameplayDebugger (99)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module AIModule (98)
+[2015.10.22-20.31.58:567][660]LogModuleManager: Shutting down and abandoning module ProfilerService (97)
+[2015.10.22-20.31.58:575][660]LogModuleManager: Shutting down and abandoning module TaskGraph (96)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (95)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (94)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (93)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module CableComponent (92)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module SlateRemote (91)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (90)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (89)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module MeshPaint (88)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module SlateReflector (87)
+[2015.10.22-20.31.58:576][660]LogModuleManager: Shutting down and abandoning module LevelEditor (86)
+[2015.10.22-20.31.58:577][660]LogModuleManager: Shutting down and abandoning module AssetRegistry (85)
+[2015.10.22-20.31.58:706][660]LogModuleManager: Shutting down and abandoning module ContentBrowser (84)
+[2015.10.22-20.31.58:706][660]LogModuleManager: Shutting down and abandoning module Paper2DEditor (83)
+[2015.10.22-20.31.58:706][660]LogModuleManager: Shutting down and abandoning module GitSourceControl (82)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (81)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module KDevelopSourceCodeAccess (80)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module UObjectPlugin (79)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module DesktopPlatform (78)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module CodeLiteSourceCodeAccess (77)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module SourceControl (76)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (75)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (74)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module MessagingDebugger (73)
+[2015.10.22-20.31.58:707][660]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (72)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module HotReload (71)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module MainFrame (70)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module EpicSurvey (69)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module PluginBrowser (68)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (67)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (66)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module Paper2D (65)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module NullSourceCodeAccess (64)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (63)
+[2015.10.22-20.31.58:710][660]LogModuleManager: Shutting down and abandoning module UdpMessaging (62)
+[2015.10.22-20.31.58:810][660]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (61)
+[2015.10.22-20.31.58:810][660]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (60)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module PropertyEditor (59)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module GameplayTags (58)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (57)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module FunctionalTesting (56)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (55)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (54)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module MessageLog (53)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module Sequencer (52)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module AssetTools (51)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module UMGEditor (50)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module UMG (49)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module Slate (48)
+[2015.10.22-20.31.58:811][660]LogModuleManager: Shutting down and abandoning module EditorStyle (47)
+[2015.10.22-20.31.58:812][660]LogModuleManager: Shutting down and abandoning module SessionServices (46)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (44)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (43)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module ALAudio (42)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module Networking (40)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module Core (39)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module KismetCompiler (38)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module PhysXFormats (37)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module MeshUtilities (36)
+[2015.10.22-20.31.58:813][660]LogModuleManager: Shutting down and abandoning module CookingStats (35)
+[2015.10.22-20.31.58:816][660]LogModuleManager: Shutting down and abandoning module DerivedDataCache (34)
+[2015.10.22-20.31.58:859][660]LogDerivedDataCache: Shutdown
+[2015.10.22-20.31.58:859][660]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (33)
+[2015.10.22-20.31.58:860][660]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (32)
+[2015.10.22-20.31.58:860][660]LogModuleManager: Shutting down and abandoning module ImageWrapper (31)
+[2015.10.22-20.31.58:860][660]LogModuleManager: Shut
